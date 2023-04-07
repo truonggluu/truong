@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color: rgb(4, 78, 68);">  
+    <form action="http:/fptaptech.herokuapp.com" method="get">
+        <fieldset style="border: 2px solid rgb(237, 255, 40); padding: 30px; margin: 10px;">
+            <legend style="color: rgb(237, 255, 40);"><b>  Your Details:</b></legend>
+            <label>Name: <input type="text" name="name" size="30" maxlength="100"</label><br/>
+            <label>Email: <input type="email" name="email" size="30" maxlength="100"</label><br/>
+        </fieldset><br/>
+        <fieldset style="border: 2px solid rgb(237, 255, 40); padding: 30px;margin: 10px;" >
+            <legend style="color: rgb(237, 255, 40);"><b>Review:</b></legend>
+            <p>
+                <label for="hear-about">How did you heaar about us?</label>
+                <select name="referrer" id="hear-about">
+                    <option value="google">google</option>
+                    <option value="friend">friend</option>
+                    <option value="advert">advert</option>
+                    <option value="other">other</option>
+                </select>
+            </p>
+            <p>
+              Would you visit again?<br/> 
+            <label><input type="radio" name="rating" value="yes"/>YES</label>
+            <label><input type="radio" name="rating" value="no"/>NO</label>
+            <label><input type="radio" name="rating" value="maybe"/>MAYBE</label>
+            </p>
+            <p>
+                <label for="comments"><i>Comments:</i></label><br/>
+                <textarea  id="comments" cols="40" rows="4"></textarea>
+            </p>
+            <label><input type="checkbox" name="subscribe" checked="checked"/>Sign up for email updates </label><br />
+            <input style="color: ;" type="submit" value="submit review"/>
+        </fieldset>
+    </form>
+
+</body>
+</html>
